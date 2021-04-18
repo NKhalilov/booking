@@ -14,14 +14,14 @@ body {
 
 .sec1 {
     height: 100vh;
-    background: url(/enter.jpg.heic) no-repeat center / cover;
+    background: url(images/enter.jpg.heic) no-repeat center / cover;
     display: table;
     background-attachment: fixed;
     width: 100%;
 }
 .sec2 {
     height: 120vh;
-    background: url(/meeting.jpg) no-repeat fixed center / cover;
+    background: url(images/meeting.jpg) no-repeat fixed center / cover;
     /* background-color: white; */
     filter: blur(4px);
     -webkit-filter: blur(4px);
