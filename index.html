@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
     <title>Scrolling page</title>
 </head>
 <body>
    <section class="sec1" id="sec1">
-       <button class="btn-primary"><a href="#sec2"> Booking a room</a></button>
+       <button class="btn-primary"><a href="#sec2">Забронировать зал</a></button>
    </section>
    <section id="sec-middle" class="demo">
-    <a href="#sec2"><span></span><span></span><span></span>Scroll</a>
+    <a href="#sec2"><span></span><span></span><span></span>Прокрутка</a>
   </section>
    <section class="sec2" id="sec2">
    </section>
     <form method="POST" action="" class="box" id="reg-form">
-        <div style="font-size: 20px; color: white">Забронирование</div>
-        <label for="user_name">Your name: </label><br>
-        <input id="text" type="text" name="user_name"><br><br>
-        <label for="text">Surname: </label><br>
-        <input id="text" type="text" name="surname"><br><br>
-        <label for="user_phone">Telephone number: </label><br>
-        <input id="text" type="tel" name="user_phone"><br><br>
-        <label for="user_job">Your working area: </label><br><br>
+        <div style="font-size: 20px; color: white" id="book">Забронирование</div>
+        <!-- <label for="user_name" > Ваше имя: </label><br> -->
+        <input id="text" type="text" name="user_name" placeholder="Имя"><br><br>
+        <!-- <label for="text">Ваше фамилия: </label><br> -->
+        <input id="text" type="text" name="surname" placeholder="Фамилия"><br><br>
+        <!-- <label for="user_phone">Номер телефона: </label><br> -->
+        <input id="text" type="tel" name="user_phone" placeholder="Номер телефона"><br><br>
+        <!-- <label for="user_job">Место работы: </label><br><br> -->
         <select name="user_job" id="text">
+        <option value="" disabled selected id="job">Место работы</option>
         <option value="finance">Финансовый отдел</option>
-        <option value="purchase">Отдел пподажи</option>
+        <option value="purchase">Отдел продажи</option>
         <option value="sale">Отдел закупки</option>
         <option value="marketing">Маркетинговый отдел</option>
         <option value="logistics">Отдел логистики</option>
@@ -35,10 +38,10 @@
         <option value="hr">HR отдел</option>
         <option value="manufacturing">Отдел производство</option>
         <option value="it">Отдел IT</option>
-        <option value="design">Дзиайнерский отдел</option>
+        <option value="design">Дизайнерский отдел</option>
         </select><br><br>
-        <a href="#calendar" id="signing"><input type="submit" class="btn-sign" value="Signup"></a><br><br>
-        <p style="font-size: 14px;">Already signed? <a href="#login" id="logining">Login</a></p>
+        <a href="#calendar" id="signing"><input type="submit" class="btn-sign" value="Зарегистироваться"></a><br><br>
+        <p style="font-size: 14px;">Зарегистированы? <a href="#login" id="logining">Вход</a></p>
         </form>
    <div class="calendar" id="calendar">
        <h1>Calendar will be here</h1>
@@ -47,13 +50,13 @@
    </div>
    <div class="login">
     <form method="POST" action="" class="box" id="login-form">
-        <div style="font-size: 20px; margin: 10px; color: white">Login</div>
+        <div style="font-size: 20px; margin: 10px; color: white">Вход</div>
         
-        <input id="text" type="text" name="user_name"><br><br>
-        <input id="text" type="password" name="password"><br><br>
-        <input id="button" type="submit" value="login"><br><br>
+        <input id="text" type="text" name="user_name" placeholder="Имя"><br><br>
+        <input id="text" type="text" name="user_phone" placeholder="Номер телефона"><br><br>
+        <input id="button" type="submit" value="Вход" class="btn-sign"><br><br>
 
-        <a href="signup.php" id="signup">Click to Signup</a><br><br> 
+        <a href="signup.php" id="signup">Создать аккаунт</a><br><br> 
         </form>
     </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
